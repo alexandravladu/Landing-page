@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romanian Food</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #FEC765;
+        }
+
+        h2 {
+            text-align: center;
+            text-overflow: clip;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 2px solid #F88F00;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        p {
+            line-height: 2;
+            font-size: 15px;
+            margin: 20px 0 10px;
+            border: none;
+            border-radius: 10px;
+           transition: all 200ms ease-in-out;
+        }
+
+        button {
+            display: block;
+            margin: 30px auto;
+            background: #E27804;
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+ h2:hover {
+background: #FEC765;
+opacity: 0.9;
+transition: all 200ms ease-in-out;
+
+}
+p:hover { background: #F9F1F1;
+
+    }
+        .dish {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 15px 60px;
+        }
+
+        .learn-more {
+            color: #0A0060;
+            text-decoration: none;
+            font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dish">
+        <h1>
+            I love romanian gastronomy!
+        </h1>
+        <h2>
+            Especially Sarmale-Cabbage Rolls
+        </h2>
+        <img src="https://ieftinsigustos.ro/wp-content/uploads/2018/02/mamaliga-cu-sarmale-1.jpg"
+            alt="Sarmale" />
+        <p>
+            One dish that is a must at every important family event – Christmas, Easter, weddings, you name it – is Sarmale,
+            arguably considered Romania‘s national dish. Sarmale can be described as stuffed cabbage rolls. A balanced mixture of
+            minced meat (usually pork and beef, but veal is also used) and rice, with pieces of traditional bacon, chopped onions
+            and herbs (dill, parsley, thyme) is rolled in sour white cabbage leaves (sauerkraut) and very slowly cooked in clay pots
+            in the oven, covered with cabbage brine, tomato sauce and pieces of smoked meat or traditional bacon and fresh thyme
+            sprigs or pepper. Sarmale is usually served with mamaliga (often translated as polenta – corn flour mush) or bread and
+            sour cream.
+        </p>
+        <a href="https://www.discover-cee.com/sarmale-a-symbol-of-the-delicious-mix-romanian-gastronomy-has-to-offer/" target="_blank" class="learn-more">
+            Learn more here
+        </a>
+        <button class="buy-button">
+            👉 Try Sarmale!
+        </button>
+        <p class="footer">
+            This page was built by
+            <a href="https://www.lostinsideyourhead.com/" target="_blank">
+                Alexandra Vladu
+            </a>
+        </p>
+    </div>
+    <script>
+        function buy() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let emoji = prompt("What is your favorite emoji?");
+
+            alert(
+                "Thank you, " +
+                name +
+                "! We'll be in touch by email, meanwhile I hope you will try Sarmale! " +
+                emoji
+            );
+        }
+
+        let buyButton = document.querySelector(".buy-button");
+        buyButton.addEventListener("click", buy);
+    </script>
+</body>
+
+</html>
